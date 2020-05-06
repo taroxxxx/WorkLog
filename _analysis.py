@@ -498,7 +498,7 @@ def create_html(
 
             file_tl_data_line_list = append_timeline_chart_line_list(
                 file_tl_data_line_list,
-                prj_key, # ext,
+                '{0} [{1}]'.format( prj_key, ext ),
                 label_str,
                 min( uniquie_prj_file_time_start_end_dict[ prj_file_key ][0] ),
                 max( uniquie_prj_file_time_start_end_dict[ prj_file_key ][1] ),
@@ -551,7 +551,7 @@ def create_html(
 
     piechart_size = 500
     timeline_height = 400 if duration_type==1 else 300
-    timeline_height = 3000 if duration_type==2 else timeline_height
+    timeline_height = 5000 if duration_type==2 else timeline_height
     chart_width = 1500
 
     html_piechart_line ='''\
