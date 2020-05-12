@@ -473,7 +473,7 @@ def create_html(
 
         prev_time_end = time_end
 
-    if duration_type==2: # month 各ファイル毎のタイムラインを作成
+    if duration_type in [ 2 ]: # month 各ファイル毎のタイムラインを作成
 
         file_tl_data_line_list = []
 
@@ -633,7 +633,7 @@ def create_html(
     if duration_type==0: # day
         merged_data_list = project_tl_data_line_list + exe_tl_data_line_list + file_tl_data_line_list
     elif duration_type==1: # week
-        merged_data_list = project_tl_data_line_list
+        merged_data_list = project_tl_data_line_list # + file_tl_data_line_list
     elif duration_type==2: # month
         merged_data_list = file_tl_data_line_list
 
