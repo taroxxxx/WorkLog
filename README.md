@@ -8,8 +8,8 @@
 
 * python2.7.16
 
-* PySide==1.2.4
+* PySide = 1.2.4
 
-* psutil==5.6.3
+* psutil = 5.6.3
 
-* PyInstaller==3.4
+* PyInstaller = 3.4
