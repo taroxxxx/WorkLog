@@ -61,6 +61,7 @@ class Main( QtGui.QWidget ):
             'ma', 'mb',
             'aep',
             'blend',
+            'ember',
             'pyw', 'py',
             'txt', 'loq', 'env', 'shelf',
             'html', 'xml', 'json',
