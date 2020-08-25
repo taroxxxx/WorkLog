@@ -72,10 +72,10 @@ class Main( QtGui.QWidget ):
 
         # get project 2nd
         sec_file_path_fmt_list = [
-            re.compile( r'/(Project)/(?P<project>[\w]+)/' ),
-            re.compile( r'/(?P<project>(Development))[\s/]' ),
-            re.compile( r'/[_]*(?P<project>(RnD))/' ),
-            re.compile( r'/(dlasLab)/(?P<project>[\w]+)/' ),
+            re.compile( r'/(Project)/(?P<project>[\w]+)[\s/]*' ),
+            re.compile( r'/(?P<project>(Development))[\s/]*' ),
+            re.compile( r'/[_]*(?P<project>(RnD))[\s/]*' ),
+            re.compile( r'/(dlasLab)/(?P<project>[\w]+)[\s/]*' ),
         ]
 
         # apply preset
