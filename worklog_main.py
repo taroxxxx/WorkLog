@@ -75,6 +75,7 @@ class Main( QtGui.QWidget ):
             re.compile( r'/(Project)/(?P<project>[\w]+)/' ),
             re.compile( r'/(?P<project>(Development))[\s/]' ),
             re.compile( r'/[_]*(?P<project>(RnD))/' ),
+            re.compile( r'/(dlasLab)/(?P<project>[\w]+)/' ),
         ]
 
         # apply preset
