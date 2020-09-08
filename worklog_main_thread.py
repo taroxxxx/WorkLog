@@ -235,18 +235,18 @@ class MainThread( QtCore.QThread ):
             # get project
             file_path_search = self.pri_file_path_fmt.search( window_text )
 
+            get_pri = 0
             if file_path_search != None: # primary
 
                 drive = file_path_search.group( 'drive' )
 
                 if not drive in self.ignore_drive_list:
                     cur_project = file_path_search.group( 'project' )
-
+                    get_pri = 1
                     if not cur_project in self.active_project_list:
                         self.active_project_list.append( cur_project )
 
-            #print cur_project
-            if cur_project == prev_project: # secondary
+            if not get_pri: # secondary # and cur_project == prev_project
 
                 for file_path_fmt in self.sec_file_path_fmt_list:
 
